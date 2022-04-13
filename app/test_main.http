@@ -1,0 +1,42 @@
+# Test your FastAPI endpoints
+
+GET http://localhost:8000/health
+
+###
+
+POST http://localhost:8000/predict
+Accept: application/json
+Content-Type: application/json
+
+{
+  "age": 0,
+  "number_of_sexual_partners": 0,
+  "first_sexual_intercourse": 0,
+  "number_of_pregnancies": 0,
+  "smokes": true,
+  "smokes_years": 0,
+  "smokes_packs_year": 0,
+  "hormonal_contraceptives": true,
+  "hormonal_contraceptives_years": 0,
+  "iud": true,
+  "iud_years": 0,
+  "stds": true,
+  "stds_number": 0,
+  "stds_condylomatosis": true,
+  "stds_vaginal_condylomatosis": true,
+  "stds_vulvo_perineal_condylomatosis": true,
+  "stds_syphilis": true,
+  "stds_pelvic_inflammatory_disease": true,
+  "stds_genital_herpes": true,
+  "stds_molluscum_contagiosum": true,
+  "stds_hiv": true,
+  "stds_hepatitis_b": true,
+  "stds_hpv": true,
+  "dx_cin": true,
+  "dx_hpv": true,
+  "hinselmann": true,
+  "schiller": true,
+  "citology": true
+}
+
+###
