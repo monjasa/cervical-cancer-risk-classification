@@ -1,10 +1,11 @@
 import pickle
+from time import sleep
 
 import numpy as np
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from classifier import rfc
+from classifiers import rfc
 
 app = FastAPI(title="Cervical Cancer Risk Classification",
               description="API for a cervical cancer risk classification machine learning model",
